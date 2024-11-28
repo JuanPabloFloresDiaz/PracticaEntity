@@ -1,0 +1,22 @@
+﻿@model Laboratorio3.Models.Vehiculo
+
+@{
+    ViewData["Title"] = "Detalles Vehículo";
+}
+
+<div class="container mt-4">
+    <h1>Detalles del Vehículo</h1>
+    <dl class="row">
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Nombre)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Nombre)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Anio)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Anio)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Marca)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Marca)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.Modelo)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.Modelo)</dd>
+        <dt class="col-sm-2">@Html.DisplayNameFor(model => model.VIN)</dt>
+        <dd class="col-sm-10">@Html.DisplayFor(model => model.VIN)</dd>
+    </dl>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Volver</a>
+</div>
